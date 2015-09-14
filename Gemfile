@@ -27,6 +27,7 @@ gem 'jbuilder', '~> 2.0'
 
 
 gem 'bootstrap-sass'
+gem 'devise', '~> 3.5.2'
 
 group :development, :test	do
 	gem 'sqlite3'
@@ -41,6 +42,7 @@ end
 group :doc do
 	gem 'sdoc', require: false
 end
+
 
 
 # Use ActiveModel has_secure_password
