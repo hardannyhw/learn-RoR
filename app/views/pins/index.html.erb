@@ -13,7 +13,9 @@
     <% @pins.each do |pin| %>
       <tr>
         <td><%= pin.description %></td>
+        <td></td>
         <td><%= pin.user.email %></td>
+        <td></td>
         <td><%= link_to 'Show', pin %></td>
         <% if pin.user == current_user %>
         <td><%= link_to '| Edit', edit_pin_path(pin) %></td>
