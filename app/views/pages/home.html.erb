@@ -8,4 +8,9 @@
 Or <%= link_to "Sign up for free", new_user_registration_path, class: "btn btn-primary btn-lg" %></p>
 
 	<% end %>
+
+	<% if user_signed_in? %>
+		<p><%= link_to "Create You New Pin NOW!", new_pin_path, class: "btn btn-primary btn-lg" %></p>
+	<% end %>
+
 </div>
